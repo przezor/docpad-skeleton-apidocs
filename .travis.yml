@@ -7,4 +7,3 @@ install:
     - npm run prepare
 script:
     - npm run init
-    - npm run compile
