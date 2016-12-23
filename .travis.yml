@@ -14,4 +14,7 @@ script:
     - npm run compile
     - npm run preparePushResult
     - npm run pushResult
+env:
+  global:
+    secure: encrypted-github-token
     
