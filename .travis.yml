@@ -3,12 +3,15 @@ language: node_js
 node_js:
   - "4.2.1"
   - "6.9.1"
-before_script: composer config github-oauth.github.com ${GH_TOKEN}
+before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 install:
     - git config --global user.email "test@test.com"
     - git config --global user.name "Travis CI Test"
     - export docuBranch=TravisCI
     - npm run prepare
+before_script:
+  - composer self-update -q
+  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
 script:
     - npm run init
     - npm run compile
