@@ -10,7 +10,7 @@ const config = {
 
   registry: {
     location: process.env.REGISTRY_LOCATION || 'remote',
-    path: process.env.REGISTRY_PATH || 'https://' + process.env.GH_TOKEN + '@github.com/przezor/docpad-skeleton-apidocs-sampledata.git',
+    path: process.env.REGISTRY_PATH || 'https://0cc1483f2796974054b60c445a256d62601b1874@github.com/przezor/docpad-skeleton-apidocs-sampledata.git',
     fileName: 'docu_registry.json',
     branch: process.env.docuBranch || 'master',
     shortVersionFileName: 'shrinkedRegistry.json',
@@ -30,7 +30,7 @@ const config = {
   },
 
   generationResult: {
-    srcLocation: 'https://' + $GH_TOKEN + '@github.com/przezor/chewie-sample-result.git',
+    srcLocation: 'https://0cc1483f2796974054b60c445a256d62601b1874@github.com/przezor/chewie-sample-result.git',
     branch: process.env.docuBranch || 'master',
     cloneLocation: 'latestResultRepo'
   },
