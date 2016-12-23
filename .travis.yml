@@ -6,6 +6,7 @@ node_js:
 install:
     - git config --global user.email "test@test.com"
     - git config --global user.name "Travis CI Test"
+    - export docuBranch=TravisCI
     - npm run prepare
 script:
     - npm run init
