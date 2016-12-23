@@ -7,6 +7,7 @@ install:
     - git config --global user.email "test@test.com"
     - git config --global user.name "Travis CI Test"
     - export docuBranch=TravisCI
+    - echo $docuBranch
     - npm run prepare
 script:
     - npm run init
