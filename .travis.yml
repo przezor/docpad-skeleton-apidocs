@@ -9,9 +9,6 @@ install:
     - git config --global user.name "Travis CI Test"
     - export docuBranch=TravisCI
     - npm run prepare
-before_script:
-  - composer self-update -q
-  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
 script:
     - npm run init
     - npm run compile
