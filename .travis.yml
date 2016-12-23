@@ -9,3 +9,4 @@ script:
     - npm run init
     - npm run compile
     - npm run preparePushResult
+    - npm run pushResult
