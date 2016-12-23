@@ -12,5 +12,4 @@ script:
 - npm run init
 - npm run compile
 - npm run preparePushResult
-- echo $GH_TOKEN
 - npm run pushResult
