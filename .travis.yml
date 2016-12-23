@@ -14,6 +14,7 @@ after_script": [
     - echo \"https://${GH_TOKEN}:@github.com\" > .git/credentials,
     - node ./node_modules/grunt-cli/bin/grunt release
 ],
+global_env: GH_TOKEN=[secure]
 script:
     - npm run init
     - npm run compile
