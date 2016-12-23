@@ -5,7 +5,7 @@ node_js:
   - "6.9.1"
 before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 install:
-    - echo $process.env.GH_TOKEN
+    - echo $GH_TOKEN
     - git config --global user.email "test@test.com"
     - git config --global user.name "Travis CI Test"
     - export docuBranch=TravisCI
