@@ -4,8 +4,8 @@ node_js:
   - "4.2.1"
   - "6.9.1"
 install:
-    - git config user.email "test@test.com"
-    - git config user.name "Travis CI Test"
+    - git config --global user.email "test@test.com"
+    - git config --global user.name "Travis CI Test"
     - npm run prepare
 script:
     - npm run init
