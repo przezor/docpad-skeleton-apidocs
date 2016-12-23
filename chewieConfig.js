@@ -10,7 +10,7 @@ const config = {
 
   registry: {
     location: process.env.REGISTRY_LOCATION || 'remote',
-    path: process.env.REGISTRY_PATH || 'https://' + $GH_TOKEN + '@github.com/przezor/docpad-skeleton-apidocs-sampledata.git',
+    path: process.env.REGISTRY_PATH || 'https://' + process.env.GH_TOKEN + '@github.com/przezor/docpad-skeleton-apidocs-sampledata.git',
     fileName: 'docu_registry.json',
     branch: process.env.docuBranch || 'master',
     shortVersionFileName: 'shrinkedRegistry.json',
