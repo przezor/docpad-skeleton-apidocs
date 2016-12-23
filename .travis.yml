@@ -14,7 +14,3 @@ script:
     - npm run compile
     - npm run preparePushResult
     - npm run pushResult
-env:
-  global:
-    secure: "HWctLImh48dS5itdmjgwDu9vGVNmL9r8fcW0GOEsJ0sNYZgtS2yY3EvZFld7h9NBYSpnL4JVf8LUbCpRpsBgvbFGukJdgpJfCx34vxUAr6j8l/gBxgR/GmJtUYkwuUhQAaWnfOV5hVCDqHtclSk/3TWwBZ5VbuC+T7mezfkyrd8N+5IvFjf2fLg+Khz6EUyaiFJ3k5bSNsc9K8DBREeUgjbB9SQ3bIIJziUg73ckvm16xDLebQjhDwsUaULWwHiiyyyZiLZY9nPl4Eoh7fY0U74i1HwKN3Huy1pRuaKHaDlqxYYKXrGYlixAXkACY1sesXwUZVJ66SQa2JrjkXToi3MFifodEQXXpLCCTtZ7imkjaakWN4o8AamtbMpm9zj9roH0Rb66i/SHvu57U/oA+cHnQ/L94i3t+oFu+Dao41xBWSsSQ5aQI29DBAcLJU3p7uicR27hyLCOFqVFGMV+iJxdmbfF1gxHrOKKQYp5Y1GEIM96xrOxQuTq5h+IbSNth+EBWWbfsOHhylw4fbIvaPqoeLj9TGNULbICFKU1bGVcpek50KQuQ0Q40dsiO6pvfjd6Y7tspJNhqlOcpd63ew6u3ureLLnn1K8oA4XOU1HZ9C6Y9um0Juv+v9jjpeavUtG7Y60kxX6lsgwPp1Pf0tj0gdvY4DrlnXcQDNnct1I="
-    
