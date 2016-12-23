@@ -13,5 +13,3 @@ script:
 - npm run compile
 - npm run preparePushResult
 - npm run pushResult
-before_install:
-- echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
