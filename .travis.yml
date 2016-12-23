@@ -1,0 +1,10 @@
+sudo: required
+language: node_js
+node_js:
+  - "4.2.1"
+install:
+    - ls
+    - npm run prepare
+script:
+    - npm run init
+    - npm run compile
