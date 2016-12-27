@@ -11,9 +11,8 @@ install:
 script:
 - npm run init
 - npm run compile
-before_deploy:
-- export docuBranch=gh-pages
 deploy:
+- export docuBranch=gh-pages
 - npm run preparePushResult
 - npm run pushResult
 env:
