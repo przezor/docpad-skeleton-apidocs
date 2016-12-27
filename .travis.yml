@@ -6,12 +6,12 @@ node_js:
 before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 install:
 - git config --global user.name "Travis CI Test"
-- export docuBranch=TravisCI
 - export DZIALAJ_KURDE='https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git'
 - npm run prepare
 script:
 - npm run init
 - npm run compile
+- export docuBranch=TravisCI
 - npm run preparePushResult
 - npm run pushResult
 env:
