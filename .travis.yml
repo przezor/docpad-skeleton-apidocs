@@ -7,7 +7,7 @@ install:
 - git config --global user.email "test@test.com"
 - git config --global user.name "Travis CI Test"
 - export docuBranch=TravisCI
-- export DZIALAJ_KURDE='https://'+$DEPLOY_TOKEN+'@github.com/przezor/chewie-sample-result.git'
+- export DZIALAJ_KURDE='https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git'
 - echo $DEPLOY_TOKEN
 - echo $DZIALAJ_KURDE
 - npm run prepare
