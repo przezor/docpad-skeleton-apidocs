@@ -4,11 +4,11 @@ node_js:
 - 6.9.1
 - 4.2.1
 before_install: 
+- if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi #make sure that npm version is at least 3.x
 - git config --global user.name "Travis CI Test"
 - git config --global user.email "test@test.com"
 - export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git'
 install:
-- if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi #make sure that npm version is at least 3.x
 - npm run prepare
 script:
 - npm run init
