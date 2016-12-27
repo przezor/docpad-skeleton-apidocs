@@ -30,7 +30,7 @@ const config = {
   },
 
   generationResult: {
-    srcLocation: 'https://'+ $DEPLOY_TOKEN +'@github.com/przezor/chewie-sample-result.git',
+    srcLocation: process.env.DZIALAJ_KURDE || 'https://github.com/przezor/chewie-sample-result.git',
     branch: process.env.docuBranch || 'master',
     cloneLocation: 'latestResultRepo'
   },
