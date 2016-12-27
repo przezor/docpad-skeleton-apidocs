@@ -5,7 +5,7 @@ node_js:
 install:
 - git config --global user.name "Travis CI Test"
 - git config --global user.email "test@test.com"
-- export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/yaas/chewie-sample-result.git'
+- export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git'
 - npm run prepare
 script:
 - npm run init
