@@ -2,19 +2,15 @@ sudo: required
 language: node_js
 node_js:
 - 6.9.1
-before_install: 
-- if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi #make sure that npm version is at least 3.x
+install:
 - git config --global user.name "Travis CI Test"
 - git config --global user.email "test@test.com"
-- export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git'
-install:
+- export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/yaas/chewie-sample-result.git'
 - npm run prepare
 script:
 - npm run init
 - npm run compile
-before_deploy:
-- export docuBranch=gh-pages
-deploy:
+- export docuBranch=TravisCI
 - npm run preparePushResult
 - npm run pushResult
 env:
