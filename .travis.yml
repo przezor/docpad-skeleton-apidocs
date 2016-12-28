@@ -11,7 +11,7 @@ install:
 script:
 - npm run init
 - npm run compile
-- export docuBranch=gh-pages
+- export docuBranch=TravisCI
 - npm run preparePushResult
 - npm run pushResult
 env:
