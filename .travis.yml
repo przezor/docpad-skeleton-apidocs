@@ -17,7 +17,7 @@ script:
 - npm run compile
 - npm run preparePushResult
 - git add out && git commit -m "Initial dist subtree commit"
-- git subtree push --repo 'https://'$DEPLOY_TOKEN'@github.com/przezor/chewie-sample-result.git' --prefix out origin gh-pages
+- git subtree push --repo https://@github.com/przezor/chewie-sample-result.git --prefix out origin gh-pages
 env:
   global:
   - secure: msa0TCAGp5fPf4NuN5VW6aYXHgXk5uJYFoUVQZvZny9Z+rYO0IXLjCgNf/Az7oNGSOH914JqwEJWA8LLwZ3EQVEJpdUX9t3u6Di9zbZDZExqZcyoujd+hLK2uyKoZeW4zuonxHOptHlXBCU89wmUjpLngP6/bYjXunsw18pt+Z/AfkJ/tychzxynAdmQqe1WxBuD4ll1Rjxrku1ITPvUeQWP6FTFRxGBVAHdx9/QeWZ6p2yCVkwGQV5RI17KvnY8yxQm/G+hf46E4lhLI+alM/5iTdyB81XOhLC+PHbRwALNSRxJK6cnJ0du3TD3Og1PAvWvgMpX0b1aEkgv2zwjil/DMhASQjgdajmQPBWvy613eOudh10IFJIiBJFlEu1NhPAd72xzOFVBZWC/YACPv6E7sWUOTP2ZvDqOB5YWya0nfs4lfGTZ2suBOwHJo8Cj1n11dYj3ulVSQeXXETsYmp1xySU3mAu/wLfxmSy6gF0LhaoGRZprujGnXkmca+DxPJnjhc13DlcWqmr+dDrItrYPkfYm4Qup/18OkrVumwlBVCkelE5KJGuwZGK4B9k5lqqXdqyGr63FmUuz6H4QhZuUr027B2ZOlE5rnwMZK899F5jsx/xE/SaIkNimqeXccXiWB+WgsG8BhZxQkm/gZ5hKPz4mQa0+fVdyS//jdNg=
